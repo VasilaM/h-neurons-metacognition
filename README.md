@@ -1,2 +1,7 @@
-# h-neurons-metacognition
-h-neuron confidence/metacognition project
+# Effects of Perturbing Hallucination-Associated Neurons on Language Model Metacognition
+
+## abstract
+Language models can report confidence in their answers, but it is unclear whether these reports draw on internal signals about their own correctness or are surface-level output behaviour. Recent work identified a sparse set of 'h-neurons' whose activations are strongly associated with hallucination. We ask whether these neurons play a causal role in metacognition, manifested as the ability of a model's confidence to tell its own correct answers from its errors. We use metrics from signal detection theory (SDT) to evaluate metacognitive sensitivity (type-2 AUROC) and efficiency (meta-d', M-ratio). We identify a set of 35 h-neurons and test how well Gemma-3-4B-it's reported confidence reflects its performance on a two-alternative forced-choice version of TriviaQA under the perturbation of these neurons. We find that metacognitive sensitivity and efficiency degrade under the amplification of these h-neurons beyond type-1 performance degradation, and even slightly improve during their suppression. These results suggest h-neurons are not just associated with model compliance, as demonstrated by Gao et al, but also impact a model's metacognitive capabilities.
+
+## work-in-progress
+We are currently working on expanding the analysis to different sizes of Gemma4, as well as prime-identifying and photo-based 2-AFC tasks.
